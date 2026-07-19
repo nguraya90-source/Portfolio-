@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noor Guraya | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#050816;
+color:white;
+overflow-x:hidden;
+}
+
+body::before{
+content:'';
+position:fixed;
+width:100%;
+height:100%;
+background:
+radial-gradient(circle at 20% 20%,rgba(0,255,255,.15),transparent 30%),
+radial-gradient(circle at 80% 70%,rgba(255,0,255,.15),transparent 30%);
+z-index:-1;
+}
+
+header{
+text-align:center;
+padding:80px 20px;
+}
+
+.profile{
+width:180px;
+height:180px;
+border-radius:50%;
+border:4px solid #00e5ff;
+box-shadow:0 0 30px #00e5ff;
+object-fit:cover;
+animation:float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(-12px);}
+}
+
+h1{
+font-size:3rem;
+margin-top:20px;
+color:#00e5ff;
+}
+
+.tagline{
+font-size:1.2rem;
+opacity:.9;
+margin-top:10px;
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:20px;
+}
+
+.card{
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(10px);
+border:1px solid rgba(255,255,255,.1);
+border-radius:20px;
+padding:25px;
+margin:20px 0;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+box-shadow:0 0 20px rgba(0,229,255,.4);
+}
+
+.section-title{
+font-size:2rem;
+margin-bottom:20px;
+color:#00e5ff;
+}
+
+.skill{
+margin-bottom:18px;
+}
+
+.skill-name{
+margin-bottom:8px;
+}
+
+.bar{
+height:12px;
+background:#222;
+border-radius:20px;
+overflow:hidden;
+}
+
+.fill{
+height:100%;
+background:linear-gradient(90deg,#00e5ff,#7c4dff);
+border-radius:20px;
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.project{
+padding:20px;
+border-radius:15px;
+background:#10172b;
+border:1px solid rgba(255,255,255,.1);
+}
+
+.project h3{
+color:#00e5ff;
+margin-bottom:10px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 22px;
+margin:8px;
+border-radius:12px;
+text-decoration:none;
+font-weight:600;
+background:linear-gradient(90deg,#00e5ff,#7c4dff);
+color:white;
+}
+
+.btn:hover{
+opacity:.9;
+}
+
+footer{
+text-align:center;
+padding:30px;
+margin-top:30px;
+opacity:.8;
+}
+</style>
+</head>
+<body>
+
+<header>
+<img src="profile.jpg" class="profile" alt="Profile Photo">
+
+<h1>Noor Guraya</h1>
+<p class="tagline">
+Web Developer • Website Designer • Freelancer
+</p>
+</header>
+
+<div class="container">
+
+<div class="card">
+<h2 class="section-title">About Me</h2>
+<p>
+I create modern, responsive and futuristic websites using HTML, CSS and JavaScript.
+I build converter tools, landing pages, portfolios and business websites.
+</p>
+</div>
+
+<div class="card">
+<h2 class="section-title">Skills</h2>
+
+<div class="skill">
+<div class="skill-name">HTML</div>
+<div class="bar"><div class="fill" style="width:95%"></div></div>
+</div>
+
+<div class="skill">
+<div class="skill-name">CSS</div>
+<div class="bar"><div class="fill" style="width:90%"></div></div>
+</div>
+
+<div class="skill">
+<div class="skill-name">JavaScript</div>
+<div class="bar"><div class="fill" style="width:80%"></div></div>
+</div>
+
+<div class="skill">
+<div class="skill-name">Responsive Design</div>
+<div class="bar"><div class="fill" style="width:92%"></div></div>
+</div>
+</div>
+
+<div class="card">
+<h2 class="section-title">Projects</h2>
+
+<div class="projects">
+
+<div class="project">
+<h3>Universal Converter</h3>
+<p>Image, PDF and file conversion platform.</p>
+</div>
+
+<div class="project">
+<h3>Business Website</h3>
+<p>Modern responsive business landing page.</p>
+</div>
+
+<div class="project">
+<h3>Portfolio Website</h3>
+<p>Personal branding and portfolio showcase.</p>
+</div>
+
+</div>
+</div>
+
+<div class="card">
+<h2 class="section-title">Fiverr Services</h2>
+
+<p>
+✔ Responsive Websites<br>
+✔ Landing Pages<br>
+✔ Portfolio Sites<br>
+✔ HTML/CSS/JS Projects
+</p>
+
+<br>
+
+<a href="#" class="btn">View Fiverr Gig</a>
+</div>
+
+<div class="card">
+<h2 class="section-title">Contact Me</h2>
+
+<a href="https://wa.me/9041531693" class="btn">WhatsApp</a>
+
+<a href="mailto: nguraya90@gmail.com" class="btn">Email</a>
+
+<a href="https://github.com/nguraya" class="btn">GitHub</a>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 Noor Guraya | All Rights Reserved
+</footer>
+
+</body>
+</html>
