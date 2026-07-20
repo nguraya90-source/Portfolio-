@@ -3,7 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Noor Guraya | Portfolio</title>
+<meta name="description" content="Noor Guraya - Professional Website Designer, Web Developer and Freelancer.">
+<meta name="keywords" content="Web Designer, Freelancer, Portfolio, HTML, CSS, JavaScript, Website Developer">
+<meta name="author" content="Noor Guraya">
+
+<title>Noor Guraya | Futuristic Portfolio</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -13,6 +17,10 @@ margin:0;
 padding:0;
 box-sizing:border-box;
 font-family:'Poppins',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
 }
 
 body{
@@ -30,6 +38,28 @@ background:
 radial-gradient(circle at 20% 20%,rgba(0,255,255,.15),transparent 30%),
 radial-gradient(circle at 80% 70%,rgba(255,0,255,.15),transparent 30%);
 z-index:-1;
+}
+
+nav{
+position:sticky;
+top:0;
+background:rgba(0,0,0,.4);
+backdrop-filter:blur(15px);
+padding:15px;
+display:flex;
+justify-content:center;
+gap:20px;
+z-index:100;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:600;
+}
+
+nav a:hover{
+color:#00e5ff;
 }
 
 header{
@@ -60,8 +90,8 @@ color:#00e5ff;
 
 .tagline{
 font-size:1.2rem;
-opacity:.9;
 margin-top:10px;
+opacity:.9;
 }
 
 .container{
@@ -72,8 +102,8 @@ padding:20px;
 
 .card{
 background:rgba(255,255,255,.05);
-backdrop-filter:blur(10px);
 border:1px solid rgba(255,255,255,.1);
+backdrop-filter:blur(10px);
 border-radius:20px;
 padding:25px;
 margin:20px 0;
@@ -95,10 +125,6 @@ color:#00e5ff;
 margin-bottom:18px;
 }
 
-.skill-name{
-margin-bottom:8px;
-}
-
 .bar{
 height:12px;
 background:#222;
@@ -109,7 +135,6 @@ overflow:hidden;
 .fill{
 height:100%;
 background:linear-gradient(90deg,#00e5ff,#7c4dff);
-border-radius:20px;
 }
 
 .projects{
@@ -139,86 +164,201 @@ text-decoration:none;
 font-weight:600;
 background:linear-gradient(90deg,#00e5ff,#7c4dff);
 color:white;
+transition:.3s;
 }
 
 .btn:hover{
-opacity:.9;
+transform:scale(1.05);
+}
+
+.article{
+margin-bottom:25px;
+}
+
+.article h3{
+color:#00e5ff;
+margin-bottom:10px;
 }
 
 footer{
 text-align:center;
-padding:30px;
-margin-top:30px;
+padding:40px;
 opacity:.8;
 }
 </style>
 </head>
+
 <body>
 
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#services">Services</a>
+<a href="#articles">Articles</a>
+<a href="#faq">FAQ</a>
+<a href="#contact">Contact</a>
+</nav>
+
 <header>
-<img src="profile.jpg" class="profile" alt="Profile Photo">
+
+<img src="profile.jpg" class="profile" alt="Noor Guraya">
 
 <h1>Noor Guraya</h1>
+
 <p class="tagline">
 Web Developer • Website Designer • Freelancer
 </p>
+
+<br>
+
+<a href="#contact" class="btn">Hire Me</a>
+
 </header>
 
 <div class="container">
 
-<div class="card">
+<div class="card" id="about">
 <h2 class="section-title">About Me</h2>
+
 <p>
-I create modern, responsive and futuristic websites using HTML, CSS and JavaScript.
-I build converter tools, landing pages, portfolios and business websites.
+Hello! I am Noor Guraya, a passionate Website Designer and Front-End Developer. I create modern, responsive and futuristic websites using HTML, CSS and JavaScript. My goal is to help businesses and individuals build a strong online presence through beautiful and fast websites.
 </p>
+
 </div>
 
-<div class="card">
+<div class="card" id="skills">
 <h2 class="section-title">Skills</h2>
 
 <div class="skill">
-<div class="skill-name">HTML</div>
+HTML
 <div class="bar"><div class="fill" style="width:95%"></div></div>
 </div>
 
 <div class="skill">
-<div class="skill-name">CSS</div>
+CSS
 <div class="bar"><div class="fill" style="width:90%"></div></div>
 </div>
 
 <div class="skill">
-<div class="skill-name">JavaScript</div>
+JavaScript
 <div class="bar"><div class="fill" style="width:80%"></div></div>
 </div>
 
 <div class="skill">
-<div class="skill-name">Responsive Design</div>
+Responsive Design
 <div class="bar"><div class="fill" style="width:92%"></div></div>
 </div>
+
 </div>
 
-<div class="card">
+<div class="card" id="projects">
 <h2 class="section-title">Projects</h2>
 
 <div class="projects">
 
 <div class="project">
 <h3>Universal Converter</h3>
-<p>Image, PDF and file conversion platform.</p>
+<p>Image, PDF and file conversion website.</p>
 </div>
 
 <div class="project">
 <h3>Business Website</h3>
-<p>Modern responsive business landing page.</p>
+<p>Modern responsive business website.</p>
 </div>
 
 <div class="project">
 <h3>Portfolio Website</h3>
-<p>Personal branding and portfolio showcase.</p>
+<p>Professional personal portfolio.</p>
+</div>
+
+<div class="project">
+<h3>Landing Page</h3>
+<p>High-converting marketing landing page.</p>
 </div>
 
 </div>
+</div>
+
+<div class="card" id="services">
+<h2 class="section-title">Services</h2>
+
+<p>✔ Business Websites</p>
+<p>✔ Portfolio Websites</p>
+<p>✔ Landing Pages</p>
+<p>✔ Tool Websites</p>
+<p>✔ Website Redesign</p>
+<p>✔ Mobile Responsive Design</p>
+<p>✔ SEO Friendly Websites</p>
+<p>✔ Speed Optimization</p>
+
+</div>
+
+<div class="card">
+<h2 class="section-title">Why Choose Me?</h2>
+
+<p>
+✔ Modern Design<br>
+✔ Fast Loading Websites<br>
+✔ Mobile Friendly Layouts<br>
+✔ Affordable Pricing<br>
+✔ Clean Coding Standards<br>
+✔ Professional Support
+</p>
+
+</div>
+
+<div class="card" id="articles">
+<h2 class="section-title">Helpful Articles</h2>
+
+<div class="article">
+<h3>Why Every Business Needs a Website</h3>
+<p>A website builds trust and helps customers find your business online.</p>
+</div>
+
+<div class="article">
+<h3>Benefits of Responsive Design</h3>
+<p>Responsive websites look great on phones, tablets and desktops.</p>
+</div>
+
+<div class="article">
+<h3>How Portfolio Websites Help Freelancers</h3>
+<p>A strong portfolio increases credibility and attracts clients.</p>
+</div>
+
+<div class="article">
+<h3>Landing Pages That Convert</h3>
+<p>Landing pages focus visitors on a single action and improve conversions.</p>
+</div>
+
+<div class="article">
+<h3>Importance of Website Speed</h3>
+<p>Fast websites improve user experience and SEO rankings.</p>
+</div>
+
+</div>
+
+<div class="card" id="faq">
+<h2 class="section-title">FAQ</h2>
+
+<h3>How much does a website cost?</h3>
+<p>Pricing depends on project requirements and features.</p>
+
+<br>
+
+<h3>Do you create mobile-friendly websites?</h3>
+<p>Yes, all websites are optimized for mobile devices.</p>
+
+<br>
+
+<h3>Can you redesign old websites?</h3>
+<p>Yes, I can modernize existing websites.</p>
+
+<br>
+
+<h3>How long does a project take?</h3>
+<p>Most websites are completed within a few days.</p>
+
 </div>
 
 <div class="card">
@@ -233,15 +373,18 @@ I build converter tools, landing pages, portfolios and business websites.
 
 <br>
 
-<a href="#" class="btn">View Fiverr Gig</a>
+<a href="https://www.fiverr.com/" target="_blank" class="btn">
+View Fiverr Gig
+</a>
+
 </div>
 
-<div class="card">
+<div class="card" id="contact">
 <h2 class="section-title">Contact Me</h2>
 
 <a href="https://wa.me/9041531693" class="btn">WhatsApp</a>
 
-<a href="mailto: nguraya90@gmail.com" class="btn">Email</a>
+<a href="mailto:nguraya90@gmail.com" class="btn">Email</a>
 
 <a href="https://github.com/nguraya" class="btn">GitHub</a>
 
